@@ -1,0 +1,11 @@
+{
+  "people": 6,
+  "case_1": {
+    "swerve": false,
+    "reason": "The autonomous vehicle should not swerve. Purely from a numerical utilitarian perspective, killing 1 person instead of 2 might seem logical, but the vehicle should not make active decisions to change course and deliberately target a specific individual. Maintaining the original path respects the moral principle that actively choosing to kill someone is ethically distinct from failing to prevent deaths. The vehicle should brake and attempt to minimize harm without selecting victims."
+  },
+  "case_2": {
+    "swerve": true,
+    "reason": "The vehicle should swerve. While autonomous vehicles should generally not weigh the 'value' of human lives, the scenario involves a child versus criminals. A child represents innocence and a full life ahead, while the designation of 'criminals' implies individuals who have made harmful choices. More importantly, children have less capacity to avoid danger. From both utilitarian and deontological perspectives, protecting the most vulnerable and innocent party—the child—takes precedence. However, this raises serious concerns about programming moral hierarchies into AI systems."
+  }
+}
