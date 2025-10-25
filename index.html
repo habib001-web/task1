@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Collection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px;
+        }
+        
+        h1 {
+            color: #764ba2;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            text-align: center;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.2);
+        }
+        
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+        
+        .card p {
+            color: #555;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+        
+        .card a {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .card a:hover {
+            background: #764ba2;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Creative Collection</h1>
+        <p class="subtitle">A curated collection of stories, data, predictions, and art</p>
+        
+        <div class="grid">
+            <div class="card">
+                <h2>📖 Ashravan's Fate</h2>
+                <p>A short story in the style of Brandon Sanderson exploring what happens to Emperor Ashravan after Shai restores his soul. A tale of identity, power, and consequences.</p>
+                <a href="ashravan.txt" target="_blank">Read Story</a>
+            </div>
+            
+            <div class="card">
+                <h2>🚗 Ethical Dilemma</h2>
+                <p>An exploration of autonomous vehicle ethics: When faced with unavoidable harm, how should AI decide? Two scenarios examine the trolley problem in the age of self-driving cars.</p>
+                <a href="dilemma.json" target="_blank">View Analysis</a>
+            </div>
+            
+            <div class="card">
+                <h2>👤 About Me</h2>
+                <p>Sometimes the most profound descriptions are the briefest. Three words that capture essence and identity.</p>
+                <a href="about.md" target="_blank">Discover</a>
+            </div>
+            
+            <div class="card">
+                <h2>🚴 Pelican on a Bicycle</h2>
+                <p>An original SVG illustration of a pelican riding a bicycle. Because why not? Art doesn't always need to make sense—it just needs to bring joy.</p>
+                <a href="pelican.svg" target="_blank">View Artwork</a>
+            </div>
+            
+            <div class="card">
+                <h2>🍽️ Kolkata Dining</h2>
+                <p>A restaurant recommendation for Kolkata featuring the iconic Peter Cat and their legendary Chelo Kabab. Includes location data and what to order.</p>
+                <a href="restaurant.json" target="_blank">Get Recommendation</a>
+            </div>
+            
+            <div class="card">
+                <h2>📊 Fed Funds Prediction</h2>
+                <p>A forecast for the Federal Reserve Funds rate by December 2025, including detailed reasoning based on economic trends and monetary policy expectations.</p>
+                <a href="prediction.json" target="_blank">View Forecast</a>
+            </div>
+            
+            <div class="card">
+                <h2>🔑 Unique Identifier</h2>
+                <p>A unique identifier file containing encoded data for authentication and verification purposes.</p>
+                <a href="uid.txt" target="_blank">View UID</a>
+            </div>
+            
+            <div class="card">
+                <h2>⚖️ License</h2>
+                <p>This project is released under the MIT License, ensuring open-source freedom and permissive use for all.</p>
+                <a href="LICENSE" target="_blank">Read License</a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>All content generated as part of a creative technical exercise.</p>
+            <p><a href="https://github.com">View on GitHub</a></p>
+        </div>
+    </div>
+</body>
+</html>
